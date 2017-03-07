@@ -1,0 +1,1 @@
+The way of C is the most elegent, and Python is nice.
