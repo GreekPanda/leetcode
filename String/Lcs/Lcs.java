@@ -11,7 +11,7 @@ public class LCS {
 		for(int i = 0; i < s.length(); ++i) {
 			for(int j = 0; j < t.length(); ++j) {
 				int lcs_tmp = 0;
-				while((i + lcs_tmp < s.length()) && (j + lcs_tmp < t.length()) && (s[i + lcs_tmp] == t[j ++ lcs_tmp])) {
+				while((i + lcs_tmp < s.length()) && (j + lcs_tmp < t.length()) && (s.CharAt(i + lcs_tmp) == t.CharAt[j + lcs_tmp])) {
 					++lcs_tmp;
 				}
 				if(lcs_tmp > lcs)
