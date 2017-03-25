@@ -1,0 +1,8 @@
+Question
+lintcode: (50) Product of Array Exclude Itself
+GeeksforGeeks: A Product Array Puzzle - GeeksforGeeks
+Given an integers array A.
+Define B[i] = A[0] * ... * A[i-1] * A[i+1] * ... * A[n-1], calculate B WITHOUT divide o
+peration.
+Example
+For A=[1, 2, 3], return [6, 3, 2].
