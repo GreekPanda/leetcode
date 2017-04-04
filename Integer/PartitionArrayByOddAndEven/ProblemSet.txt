@@ -1,0 +1,9 @@
+Partition Array by Odd and Even
+Question
+lintcode: (373) Partition Array by Odd and Even
+Segregate Even and Odd numbers - GeeksforGeeks
+Partition an integers array into odd number first and even number second.
+Example
+Given [1, 2, 3, 4], return [1, 3, 2, 4]
+Challenge
+Do it in-place.
