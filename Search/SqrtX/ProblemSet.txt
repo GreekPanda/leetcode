@@ -1,0 +1,8 @@
+Sqrt(x)
+Tags: Binary Search, Math, Medium
+Question
+leetcode: Sqrt(x)
+lintcode: Sqrt(x)
+Problem Statement
+Implement int sqrt(int x) .
+Compute and return the square root of x.
