@@ -9,8 +9,9 @@ class Solution {
 
             int start = 0;
             int end = x;
+            long long mid = 0;
             while(start + 1 < end) {
-                int mid = start + (end - start) / 2;
+                mid = start + (end - start) / 2;
                 if(mid * mid == x)
                     return mid;
                 else if (mid * mid < x)
