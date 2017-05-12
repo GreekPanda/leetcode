@@ -3,8 +3,9 @@ class Solution {
 		char c = k + '0';
 		int count = 0;
 		for(int i = k; i <= n; i++) {
-			for(String s: to_string(i)) {
-				if(s == c)
+			char[] iChars = Integer.toString(i).toCharArray();
+			for (char iChar : iChars) {
+				if (kChar == iChar) 
 					count++;
 			}
 		}

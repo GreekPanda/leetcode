@@ -21,4 +21,21 @@ class ProductExcludeItself{
 			
 			return result;
  		}
+		
+		vector<int> productExcludeItself(vector<int> &nums, int flag) {
+			const int len = nums.size();
+			
+			vector<long long> result(len, 1);
+			for(int i = 0; i < len; ++i) {
+				result[i] = result[i - 1] * nums[i - 1]; 
+			}
+			
+			long long tmp = 1;
+			for(int i = len; i > 0; i--) {
+				result[i] *= tmp;
+				tmp *= num[i]; 
+			}
+			
+			return result;
+		}
 };
