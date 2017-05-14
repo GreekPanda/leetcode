@@ -13,18 +13,29 @@ class ListNode {
 class Solution {
     public:
         LsitNode* rmDup(ListNode *head) {
-            ListNode *curr = head;
+			if(head == NULL  || head->next == NULL)
+				return NULL;
+			
+            ListNode *dummy;
+			dummy->next = head;
+			ListNode *curr = dummy;
+		
             while(curr != NULL) {
-                while (!curr->next && curr->next.val == curr->val) {
-                    ListNode *tmp = curr->next;
-                    curr->next = curr->next->next;
-                    delete(tmp);
-                    tmp = NULL;
+                while (!curr->next && !curr->next->next) {
+                   if(curr->next.val == curr->next->next.val) {
+					   int val = curr->next.val;
+					   if(curr->next.val != NULL && val == curr->next->next.val) {
+							ListNode *tmp = curr->next;
+							curr->next = curr->next->next;
+							delete tmp;
+					   }
+				   } else 
+					   curr->next = curr->next->next;
 
                 }
                 curr = curr->next;
             }
-            return head;
+            return dummy->next;
         }
 };
 

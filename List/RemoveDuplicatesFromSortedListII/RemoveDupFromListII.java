@@ -12,15 +12,28 @@ class ListNode {
 
 class Solution {
     public ListNode rmDup(ListNode head) {
-        ListNode curr = head;
-        while(curr != null) {
-            while(!curr.next && curr.next.val == curr.val) {
-                curr.next = curr.next.next; 
-            } 
-            curr = curr.next;
-        }
+        if(head == null || head.next == null)
+			return null;
+		
+		ListNode dummy;
+		dummy.next = head;
+		ListNode curr;
+        while(curr != NULL) {
+			while (!curr.next && !curr.next.next) {
+			   if(curr.next.val == curr.next.next.val) {
+				   int val = curr.next.val;
+				   if(curr.next.val != NULL && val == curr.next.next.val) {
+						ListNode *tmp = curr.next;
+						curr.next = curr.next.next;
+						delete tmp;
+				   }
+			   } else 
+				   curr.next = curr.next.next;
 
-        return head;
+			}
+			curr = curr.next;
+		}
+        return dummy.head;
     }
 }
 
