@@ -1,12 +1,12 @@
 """
 class ListNode:
-    def __init__(val):
+    def __init__(self, val):
         this.val = val
         this.next = none
 """
 
 class Solution:
-    def rmNthNodeFromEndOfList(head, n):
+    def rmNthNodeFromEndOfList(self, head, n):
         if head is none or n < 0:
             return
             
