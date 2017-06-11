@@ -10,7 +10,7 @@ class ListNode {
 class Solution {
 	public:
 		ListNode* merger2Lists(vector<ListNode*> &lists) {
-			if(list == NULL)
+			if(lists == NULL)
 				return NULL;
 			
 			ListNode* dummy = new ListNode(INT_MAX);

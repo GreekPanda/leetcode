@@ -14,8 +14,8 @@ class Solution {
 		if(lists == null)
 			return null;
 		
-		ListNode* dummy = new ListNode(INT_MAX);
-		ListNode* lastNode = dummy;
+		ListNode dummy = new ListNode(INT_MAX);
+		ListNode lastNode = dummy;
 		
 		while(true) {
 			int count = 0;
