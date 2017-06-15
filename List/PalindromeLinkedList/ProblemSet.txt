@@ -1,0 +1,11 @@
+Palindrome Linked List
+Question
+leetcode: Palindrome Linked List | LeetCode OJ
+lintcode: Palindrome Linked List
+Function to check if a singly linked list is palindrome - GeeksforGeeks
+Problem Statement
+Implement a function to check if a linked list is a palindrome.
+Example
+Given 1->2->1 , return true
+Challenge
+Could you do it in O(n) time and O(1) space?
