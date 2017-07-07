@@ -1,13 +1,20 @@
-Invert Binary Tree
+Insert Node in a Binary Search Tree
 Question
-leetcode: Invert Binary Tree | LeetCode OJ
-lintcode: (175) Invert Binary Tree
-Invert a binary tree.
+lintcode: (85) Insert Node in a Binary Search Tree
+Given a binary search tree and a new tree node, insert the node into the tree. You sho
+uld keep the tree still be a valid binary search tree.
 Example
-1 1
-/ \ / \
-2 3 => 3 2
+Given binary search tree as follow:
+2
 / \
-4 4
+1 4
+/
+3
+after Insert node 6, the tree should be:
+2
+/ \
+1 4
+/ \
+3 6
 Challenge
-Do it in recursion is acceptable, can you do it without recursion?
+Do it without recursion
