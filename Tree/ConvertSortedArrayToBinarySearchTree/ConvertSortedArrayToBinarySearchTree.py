@@ -18,7 +18,7 @@ class Solution:
         
         root = TreeNode(nums[(start + end) / 2])
         root.left = helper(nums, start, (start + end) /  2 - 1)
-        root.right = helper(nums, star + (start + end) / 2 + 1, end)
+        root.right = helper(nums, start + (start + end) / 2 + 1, end)
         return root
         
        
